@@ -76,7 +76,10 @@ int itc_spr(int a, int b) {
 }
 
 int itc_str(int a, int b, int c) {
-	return 0;
+	int p, f;
+	p = (a + b + c) / 2;
+	f = p * (p - a) * (p - b) * (p - c);
+	return itc_sqrt(f);
 }
 
 double itc_scir(int radius) {
