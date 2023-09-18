@@ -60,7 +60,7 @@ int itc_sqrt(int num) {
 	int ch;
 	ch = -1;
 	if (num <= 0) return -1;
-	for (int i = 1; i <= num; i++) {
+	for (int i = 1; i*i <= num; i++) {
 		if (i * i == num) ch = i;
 	}
 	return ch;
